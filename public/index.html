@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <div id="owerllay" class="owerllay off">
+      <form action="/api/pay" method="post" id="pay" class="window">
+        <h1>Оплата</h1>
+        <h2>Описние</h2>
+        <p id="desc">Оплата видеоролика name</p>
+        <h2>Цена</h2>
+        <p>2000р</p>
+        <label for="number">Номер карты</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="**** **** **** ****"
+          number
+          autofocus
+        />
+        <div class="row">
+          <input
+            type="number"
+            id="id"
+            name="id"
+            style="display: none"
+            readonly
+          />
+          <label for="date">Дата</label>
+          <input type="date" id="date" name="date" />
+          <label for="svv">CVV</label>
+          <input
+            type="number"
+            id="svv"
+            name="svv"
+            placeholder="***"
+            number
+            min="001"
+            max="999"
+          />
+        </div>
+        <div class="row">
+          <button type="submit">Оплатить</button>
+          <button id="closeBut" type="button">Отмена</button>
+        </div>
+      </form>
+    </div>
+    <div id="topBar" class="topBar">
+      <button id="lessensBut">Уроки</button>
+      <button id="inviteBut">Пригласить</button>
+    </div>
+    <main>
+      <div id="lessens" class="lessens off"></div>
+      <div id="invite" class="invite off">
+        <button id="createLinkBut"><p>Создать ссылку</p></button>
+        <div
+          style="width: 100%; height: 2px; background-color: rgb(107, 144, 255)"
+        ></div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

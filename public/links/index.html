@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extract URL Parameter</title>
+  </head>
+  <body>
+    <div id="valueDisplay">Значение будет здесь</div>
+    <script>
+      // Функция для извлечения значения из URL
+      function getValueFromURL() {
+        const url = window.location.href;
+        const parts = url.split("/");
+        const value = parts.pop() || parts.pop(); // В случае если URL заканчивается слэшем
+        return value;
+      }
+
+      // Отображение значения в HTML элементе
+      document.getElementById("valueDisplay").textContent = getValueFromURL();
+    </script>
+  </body>
+</html>

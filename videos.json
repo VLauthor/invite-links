@@ -1,0 +1,66 @@
+{
+  "0": {
+    "name": "html",
+    "url": "https://youtu.be/SKRydSA2bYA?si=-OyrHc9I3amlRxRH"
+  },
+  "1": {
+    "name": "css",
+    "url": "https://youtu.be/SpCUuyZZTp8?si=Pc0EWaBHPuN0t-jY"
+  },
+  "2": {
+    "name": "javascript",
+    "url": "https://youtu.be/Zx9k4R4g5rs?si=qXyOvXUn0derY9hm"
+  },
+  "3": {
+    "name": "typescript",
+    "url": "https://youtu.be/9yZuZdWMDRI?si=vVq32o5DTy46OTGj"
+  },
+  "4": {
+    "name": "tests",
+    "url": "https://youtu.be/HT9PKe-UX8A?si=TtrRN9_dTza_Xl39"
+  },
+  "5": {
+    "name": "JWT",
+    "url": "https://youtu.be/7iuwfKOcvkE?si=657rCvZxXEdyLnbZ"
+  },
+  "6": {
+    "name": "redis",
+    "url": "https://youtu.be/QpBaA6B1U90?si=8MRFvZqTHKCpMWme"
+  },
+  "7": {
+    "name": "prisma orm",
+    "url": "https://youtu.be/YoSl5sx-uUU?si=rO4H2gTTJVl6EGkp"
+  },
+  "8": {
+    "name": "ООП",
+    "url": "https://youtu.be/-6DWwR_R4Xk?si=-xNp2uPes2GQdn44"
+  },
+  "9": {
+    "name": "SOLID",
+    "url": "https://youtu.be/TxZwqVTaCmA?si=s0-hN0gS_c30iYxb"
+  },
+  "10": {
+    "name": "database",
+    "url": "https://youtu.be/W2Z7fbCLSTw?si=vGQaMwEpN9-Hw7Rp"
+  },
+  "11": {
+    "name": "UX/UI",
+    "url": "https://youtu.be/kEvV71dfFDk?si=Hf7K-rVOAZKOeziF"
+  },
+  "12": {
+    "name": "Frontend",
+    "url": "https://youtu.be/XZyhsuvu1YI?si=9zyOvGgbwj2AXYjH"
+  },
+  "13": {
+    "name": "Backend",
+    "url": "https://youtu.be/VR9EPKz8aXk?si=3iebvEJsk4naJQDJ"
+  },
+  "14": {
+    "name": "React",
+    "url": "https://youtu.be/GNrdg3PzpJQ?si=fvO8GY07I4SAjR8f"
+  },
+  "15": {
+    "name": "express",
+    "url": "https://youtu.be/tKM44vPHU0U?si=wp40_1Ok_qXKBs_y"
+  }
+}

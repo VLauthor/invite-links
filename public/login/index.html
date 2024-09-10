@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Авторизация</title>
+  </head>
+  <body>
+    <form id="loginForm" action="/api/login" method="post">
+      <h1>Авторизация</h1>
+      <label for="mail">Почта:</label>
+      <input type="email" id="mail" name="mail" required />
+
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Войти</button>
+    </form>
+    <script>
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let form = document.querySelector("form");
+          console.log(form);
+
+          let formData = new FormData(form);
+          console.log(formData);
+          let xhr = new XMLHttpRequest();
+          xhr.open("post", form.action, true);
+          xhr.onload = function () {
+            if (xhr.status === 202) {
+              let responseData = JSON.parse(xhr.responseText);
+              console.log(responseData.access);
+              console.log(responseData.refresh);
+              localStorage.setItem("accessToken", responseData.access);
+              localStorage.setItem("refreshToken", responseData.refresh);
+              window.location.href = "/";
+            } else {
+              let responseData = JSON.parse(xhr.responseText);
+              alert("Неправильный логин или пароль");
+            }
+          };
+          xhr.onerror = function () {
+            alert("Ошибка сети");
+          };
+          xhr.send(formData);
+        });
+    </script>
+  </body>
+</html>
